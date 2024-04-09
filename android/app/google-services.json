@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1095998774572",
+    "project_id": "lenk-f1751",
+    "storage_bucket": "lenk-f1751.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095998774572:android:7cc699cc920a8490a82089",
+        "android_client_info": {
+          "package_name": "com.example.lenk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKSnRHJ9Jk8EUVv-WaoHzHmCcsHh9wcl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
