@@ -39,4 +39,6 @@ class AppTexts {
   static const pasteLink = "لصق الرابط";
   static const linkHint = "الرجاء إدخال اسم المستخدم";
   static const cancel = "إلغاء";
+
+  static const noHistoryFound = "  لم يتم العثور على روابط تم الكشف عليها";
 }

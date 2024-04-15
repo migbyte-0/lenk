@@ -5,7 +5,7 @@ abstract class Styles {
     color: Colors.black,
     fontSize: 25,
     fontFamily: 'Inter',
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w800,
     height: 0,
   );
 
