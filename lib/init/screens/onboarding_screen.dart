@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:lenk/core/constants/constants_exports.dart';
-import 'package:lenk/core/shared/widgets/decorators/background_shapes.dart';
+import '../../core/shared/widgets/decorators/background_shapes.dart';
 import 'package:lenk/core/shared/widgets/decorators/index.dart';
 import 'package:lenk/features/auth/presentation/screens/login_screens.dart';
 

@@ -6,7 +6,6 @@ import 'package:lenk/features/profile/presentation/screens/profile_screens.dart'
 
 import '../../../../core/shared/widgets/decorators/background_shapes.dart';
 import '../../../../core/shared/widgets/decorators/index.dart';
-import '../../../../core/shared/widgets/decorators/middle_wave_clipper.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -20,22 +19,8 @@ class HomeScreen extends StatelessWidget {
           ClipPath(
             clipper: LowerWaveClipper(),
             child: const GradientContainer(
-                myHeight: 200,
+                myHeight: 300,
                 firstGradientColor: AppColors.primaryColor,
-                secondGradientColor: AppColors.secondaryColor),
-          ),
-          ClipPath(
-            clipper: MiddleWaveClipper(),
-            child: const GradientContainer(
-                myHeight: 250,
-                firstGradientColor: AppColors.appTeal,
-                secondGradientColor: AppColors.secondaryColor),
-          ),
-          ClipPath(
-            clipper: UpperWaveClipper(),
-            child: const GradientContainer(
-                myHeight: 350,
-                firstGradientColor: AppColors.infoColor,
                 secondGradientColor: AppColors.secondaryColor),
           ),
           Positioned(
@@ -90,19 +75,23 @@ class HomeScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        ElevatedButton(
+                        ElevatedButton.icon(
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) =>
+                                    const LinkHistoryScreen()));
+                          },
+                          icon: const Icon(Icons.paste),
+                          label: const Text(AppTexts.pasteLink),
+                        ),
+                        ElevatedButton.icon(
                             onPressed: () {
                               Navigator.of(context).push(MaterialPageRoute(
                                   builder: (context) =>
                                       const LinkHistoryScreen()));
                             },
-                            child: const Text(AppTexts.pasteLink)),
-                        ElevatedButton(
-                            onPressed: () {
-                              Navigator.of(context).push(MaterialPageRoute(
-                                  builder: (context) => const ProfileScreen()));
-                            },
-                            child: const Text(AppTexts.checkLink))
+                            icon: const Icon(Icons.check),
+                            label: const Text(AppTexts.checkLink)),
                       ],
                     )
                   ],

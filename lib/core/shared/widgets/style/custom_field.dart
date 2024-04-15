@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lenk/core/constants/constants_exports.dart';
 
 class CustomField extends StatelessWidget {
   final String fieldlLabelTest;
@@ -33,6 +34,7 @@ class CustomField extends StatelessWidget {
             ),
             labelText: fieldlLabelTest,
             prefixIcon: fieldIcon,
+            iconColor: AppColors.primaryColor,
             suffixIcon: fieldClearIcon ??
                 const Icon(
                   Icons.clear,
