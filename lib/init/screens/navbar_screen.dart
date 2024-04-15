@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lenk/core/constants/app_text_styles.dart';
 import 'package:lenk/core/constants/constants_exports.dart';
 import 'package:lenk/features/history/presentation/screens/history_screens.dart';
 
@@ -27,7 +28,7 @@ class _NavBarScreenState extends State<NavBarScreen> {
       body: _pages[_currentIndex],
       bottomNavigationBar: Directionality(
         textDirection: TextDirection.rtl,
-        child: BottomNavigationBar(
+        child: BottomNavigationBar(selectedLabelStyle: Styles.style16,unselectedLabelStyle: Styles.style16,
           currentIndex: _currentIndex,
           onTap: (index) {
             setState(() {

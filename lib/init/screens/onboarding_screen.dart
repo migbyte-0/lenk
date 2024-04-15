@@ -32,23 +32,32 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 secondGradientColor: AppColors.secondaryColor),
           ),
           BackgroundShapes(
-            backgroundColor: AppColors.primaryColor.withOpacity(0.1),
+            backgroundColor: AppColors.primaryColor.withOpacity(0.1), height: 150,
+              width:  150,
           ),
           Positioned(
-            left: 500,
+            left: 120,
             child: BackgroundShapes(
               backgroundColor: AppColors.primaryColor.withOpacity(0.1),
-              height: 150,
-              width: 150,
+              height: 80,
+              width: 80,
             ),
           ),
           Positioned(
-            left: 700,
-            top: 100,
+            left: 260,
+            top: 40,
             child: BackgroundShapes(
               backgroundColor: AppColors.primaryColor.withOpacity(0.1),
-              height: 250,
-              width: 250,
+              height: 80,
+              width:  80,
+            ),
+          ),   Positioned(
+            left: 260,
+            top: 150,
+            child: BackgroundShapes(
+              backgroundColor: AppColors.primaryColor.withOpacity(0.1),
+              height: 150,
+              width:  150,
             ),
           ),
           PageView(
@@ -84,8 +93,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       shape: const RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.circular(50))),
                       child: const Icon(Icons.skip_next),
-                    ),
-                    FloatingActionButton.large(
+                    ),SizedBox(width: 50,),
+                    FloatingActionButton(
                       onPressed: () {
                         if (_currentPage < 3) {
                           _pageController.animateToPage(_currentPage + 1,
@@ -105,7 +114,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       heroTag: null,
                       child: const Icon(
                         Icons.navigate_next,
-                        size: 70,
+                        size: 50,
                       ),
                     ),
                   ],

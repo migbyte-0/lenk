@@ -15,7 +15,7 @@ class OnboardingPage extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        Lottie.asset(lottieAsset, width: 250, height: 250, repeat: false),
+        Lottie.asset(lottieAsset, width: 150, height: 150, repeat: false),
         const SizedBox(
           height: 30,
         ),

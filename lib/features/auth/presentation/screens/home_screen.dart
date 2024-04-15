@@ -4,6 +4,7 @@ import 'package:lenk/core/shared/widgets/style/custom_field.dart';
 import 'package:lenk/features/history/presentation/screens/history_screens.dart';
 import 'package:lenk/features/profile/presentation/screens/profile_screens.dart';
 
+import '../../../../core/constants/app_text_styles.dart';
 import '../../../../core/shared/widgets/decorators/background_shapes.dart';
 import '../../../../core/shared/widgets/decorators/index.dart';
 
@@ -24,19 +25,19 @@ class HomeScreen extends StatelessWidget {
                 secondGradientColor: AppColors.secondaryColor),
           ),
           Positioned(
-            left: 500,
+            left: 40,
             child: BackgroundShapes(
-              backgroundColor: AppColors.primaryColor.withOpacity(0.1),
-              height: 150,
-              width: 150,
+              backgroundColor: AppColors.primaryColor.withOpacity(0.2),
+              height: 80,
+              width: 80,
             ),
           ),
           Positioned(
-            left: 800,
+            left: 240,
             child: BackgroundShapes(
               backgroundColor: AppColors.primaryColor.withOpacity(0.1),
-              height: 80,
-              width: 80,
+              height: 130,
+              width: 130,
             ),
           ),
           Positioned(
@@ -44,8 +45,16 @@ class HomeScreen extends StatelessWidget {
             top: 50,
             child: BackgroundShapes(
               backgroundColor: AppColors.primaryColor.withOpacity(0.1),
-              height: 200,
-              width: 200,
+              height: 100,
+              width: 100,
+            ),
+          ), Positioned(
+            left: 0,
+            top: 150,
+            child: BackgroundShapes(
+              backgroundColor: AppColors.primaryColor.withOpacity(0.3),
+              height: 100,
+              width: 100,
             ),
           ),
           Padding(
@@ -66,7 +75,7 @@ class HomeScreen extends StatelessWidget {
                       height: 60,
                     ),
                     CustomField(
-                        fieldlLabelTest: AppTexts.link,
+                        fieldlLabelTest: AppTexts.linkHint,
                         fieldIcon: const Icon(Icons.link),
                         fieldHint: AppTexts.linkHint,
                         fieldClearIcon: IconButton(
@@ -82,7 +91,7 @@ class HomeScreen extends StatelessWidget {
                                     const LinkHistoryScreen()));
                           },
                           icon: const Icon(Icons.paste),
-                          label: const Text(AppTexts.pasteLink),
+                          label: const Text(AppTexts.pasteLink,style: Styles.style16,),
                         ),
                         ElevatedButton.icon(
                             onPressed: () {
@@ -91,7 +100,7 @@ class HomeScreen extends StatelessWidget {
                                       const LinkHistoryScreen()));
                             },
                             icon: const Icon(Icons.check),
-                            label: const Text(AppTexts.checkLink)),
+                            label: const Text(AppTexts.checkLink,style: Styles.style16,)),
                       ],
                     )
                   ],

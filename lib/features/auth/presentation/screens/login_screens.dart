@@ -21,50 +21,53 @@ class LoginScreen extends StatelessWidget {
                 secondGradientColor: AppColors.secondaryColor),
           ),
           BackgroundShapes(
-            backgroundColor: AppColors.primaryColor.withOpacity(0.1),
+            backgroundColor: AppColors.primaryColor.withOpacity(0.1),height: 190,
+              width: 190,
+                            
+
           ),
           Positioned(
             left: 300,
             child: BackgroundShapes(
               backgroundColor: AppColors.primaryColor.withOpacity(0.1),
-              height: 150,
-              width: 150,
+              height: 120,
+              width: 120,
             ),
           ),
           Positioned(
-            left: 700,
-            top: 100,
+            left: 20,
+            top: 650,
             child: BackgroundShapes(
-              backgroundColor: AppColors.primaryColor.withOpacity(0.1),
-              height: 250,
-              width: 250,
+              backgroundColor: AppColors.primaryColor.withOpacity(0.2),
+              height: 120,
+              width: 120,
             ),
           ),
           Positioned(
-            left: 700,
-            top: 700,
+            left: 30,
+            top: 220,
             child: BackgroundShapes(
-              backgroundColor: AppColors.primaryColor.withOpacity(0.1),
-              height: 150,
-              width: 150,
+              backgroundColor: AppColors.primaryColor.withOpacity(0.2),
+              height: 130,
+              width:130,
             ),
           ),
           Positioned(
-            left: 700,
-            top: 300,
+            left: 200,
+            top: 470,
             child: BackgroundShapes(
               backgroundColor: AppColors.primaryColor.withOpacity(0.1),
-              height: 100,
-              width: 100,
+              height: 140,
+              width: 140,
             ),
           ),
           Positioned(
-            right: 700,
-            top: 500,
+            right: 100,
+            top: 560,
             child: BackgroundShapes(
-              backgroundColor: AppColors.primaryColor.withOpacity(0.1),
-              height: 350,
-              width: 350,
+              backgroundColor: AppColors.primaryColor.withOpacity(0.2),
+              height: 70,
+              width:70,
             ),
           ),
           Padding(

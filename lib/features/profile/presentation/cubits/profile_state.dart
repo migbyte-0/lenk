@@ -1,5 +1,5 @@
-part of 'profile_cubit.dart';
+// part of 'profile_cubit.dart';
 
-class ProfileState extends Equatable {
-  const ProfileState();
-}
+// class ProfileState extends Equatable {
+//   const ProfileState();
+// }

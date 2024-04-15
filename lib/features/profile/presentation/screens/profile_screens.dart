@@ -1,5 +1,7 @@
 // Placeholder for profile_screens.dart --
 import 'package:flutter/material.dart';
+import 'package:lenk/core/constants/app_text.dart';
+import 'package:lenk/core/constants/app_text_styles.dart';
 import 'package:lenk/core/constants/constants_exports.dart';
 import 'package:lenk/core/shared/widgets/decorators/index.dart';
 import 'package:lenk/core/shared/widgets/style/custom_field.dart';
@@ -19,10 +21,10 @@ class ProfileScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const CircleAvatar(
-                maxRadius: 80,
+                maxRadius: 60,
                 child: Icon(
                   Icons.person,
-                  size: 90,
+                  size: 60,
                   color: Colors.indigo,
                 ),
               ),
@@ -35,7 +37,7 @@ class ProfileScreen extends StatelessWidget {
                 margin: const EdgeInsets.only(left: 10, right: 10),
                 child: Container(
                   margin: const EdgeInsets.all(15),
-                  padding: const EdgeInsets.all(50),
+                  padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.all(
                       Radius.circular(20),
@@ -68,8 +70,10 @@ class ProfileScreen extends StatelessWidget {
                       const SizedBox(
                         height: 30,
                       ),
-                      ElevatedButton(
-                          onPressed: () {}, child: const Text(AppTexts.logout))
+                      ElevatedButton.icon(  style: TextButton.styleFrom(elevation: 10,backgroundColor:Colors.white ),
+
+                          onPressed: () {}, label: const Text(AppTexts.logout,style: Styles.style17Red,), icon: Icon(Icons.logout,color: Colors.redAccent,),),
+                        
                     ],
                   ),
                 ),

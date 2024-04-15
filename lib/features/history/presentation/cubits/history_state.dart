@@ -1,5 +1,5 @@
-part of 'history_cubit.dart';
+// part of 'history_cubit.dart';
 
-class HistoryState extends Equatable {
-  const HistoryState();
-}
+// class HistoryState extends Equatable {
+//   const HistoryState();
+// }

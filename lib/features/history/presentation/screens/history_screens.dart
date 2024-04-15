@@ -15,7 +15,7 @@ class LinkHistoryScreen extends StatefulWidget {
 
 class _LinkHistoryScreenState extends State<LinkHistoryScreen> {
   // Sample history data
-  List<String> historyData = ["Link 1", "Link 2", "Link 3"];
+  List<String> historyData = [];
 // "Link 1", "Link 2", "Link 3"
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class _LinkHistoryScreenState extends State<LinkHistoryScreen> {
             backgroundColor: AppColors.primaryColor.withOpacity(0.1),
           ),
           Positioned(
-            left: 500,
+            left: 10,
             child: BackgroundShapes(
               backgroundColor: AppColors.primaryColor.withOpacity(0.1),
               height: 150,
@@ -34,12 +34,12 @@ class _LinkHistoryScreenState extends State<LinkHistoryScreen> {
             ),
           ),
           Positioned(
-            left: 700,
+            left: 100,
             top: 100,
             child: BackgroundShapes(
               backgroundColor: AppColors.primaryColor.withOpacity(0.1),
-              height: 250,
-              width: 250,
+              height: 100,
+              width: 100,
             ),
           ),
           Directionality(
@@ -52,10 +52,10 @@ class _LinkHistoryScreenState extends State<LinkHistoryScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         CircleAvatar(
-                          maxRadius: 100,
+                          maxRadius: 60,
                           child: Lottie.asset(
-                              height: 180,
-                              width: 180,
+                              height: 80,
+                              width: 80,
                               repeat: false,
                               'lib/assets/json/animations/error.json'),
                         ),
@@ -65,7 +65,7 @@ class _LinkHistoryScreenState extends State<LinkHistoryScreen> {
                         Center(
                           child: Text(
                             AppTexts.noHistoryFound,
-                            style: Styles.style20White,
+                            style: Styles.style16White,
                           ),
                         ),
                       ],
@@ -82,9 +82,9 @@ class _LinkHistoryScreenState extends State<LinkHistoryScreen> {
                             child: ListTile(
                               leading: const Icon(Icons.web),
                               title: Text(
-                                historyData[index],
+                                historyData[index],style: Styles.style18,
                               ),
-                              subtitle: const Text('Date'),
+                              subtitle: const Text('Date',style: Styles.style16,),
                             ),
                           );
                         },
