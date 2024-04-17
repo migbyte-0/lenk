@@ -50,7 +50,7 @@ class ProfileScreen extends StatelessWidget {
                       InkWell(
                         onTap: () {},
                         child: CustomField(
-                            fieldlLabelTest: AppTexts.link,
+                            fieldlLabelTest: "",
                             fieldIcon: const Icon(Icons.person),
                             fieldHint: AppTexts.enter,
                             isItReadOnly: true,
@@ -62,7 +62,7 @@ class ProfileScreen extends StatelessWidget {
                         height: 15,
                       ),
                       const CustomField(
-                        fieldlLabelTest: AppTexts.link,
+                        fieldlLabelTest: "",
                         fieldIcon: Icon(Icons.email),
                         isItReadOnly: true,
                         fieldHint: AppTexts.enter,
